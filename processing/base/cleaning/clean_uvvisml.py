@@ -9,6 +9,7 @@ Author: @natelgrw
 Created: 06/29/2025
 Last Edited: 07/10/2025
 """
+
 import csv
 
 def clean_uvvisml():

@@ -9,6 +9,7 @@ Author: @natelgrw
 Created: 07/09/2025
 Last Edited: 07/10/2025
 """
+
 import csv
 
 def clean_deep4chem():
