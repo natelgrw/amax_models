@@ -77,9 +77,9 @@ def clean_chemde():
             for row in csv_reader:
                 if row[1] == "NaN":
                     continue
-                elif row[-1] not in SOLV_DICT.keys():
+                elif row[-1].lower() not in SOLV_DICT.keys():
                     continue
-                csv_writer.writerow([row[0], SOLV_DICT[row[-1]], row[1]])
+                csv_writer.writerow([row[0], SOLV_DICT[row[-1].lower()], row[1]])
         csvfile_clean.close()
     csvfile_raw.close()
 
