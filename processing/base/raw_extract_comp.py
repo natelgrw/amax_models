@@ -31,5 +31,4 @@ def write_smiles(database_name):
 if __name__ == "__main__":
     write_smiles("uvvisml")
     write_smiles("smfluo1")
-    write_smiles("deep4chem")
     write_smiles("chemde")
