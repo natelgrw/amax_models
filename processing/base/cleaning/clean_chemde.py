@@ -79,7 +79,7 @@ def clean_chemde():
                     continue
                 elif row[-1].lower() not in SOLV_DICT.keys():
                     continue
-                csv_writer.writerow([row[0], SOLV_DICT[row[-1].lower()], row[1]])
+                csv_writer.writerow([row[0], SOLV_DICT[row[-1].lower()], float(row[1])])
         csvfile_clean.close()
     csvfile_raw.close()
 
