@@ -21,7 +21,7 @@ Each molecule - solvent combination contains two sets of calculated molecular de
 | ETA_dAlpha_A | Differential ETA Alpha descriptor capturing subtle size variations | PaDEL Descriptor |
 | ETA_dAlpha_B | Alternative differential ETA Alpha descriptor | PaDEL Descriptor |
 | ETA_Epsilon (1-5) | Electronic effect descriptor reflecting polarizability | PaDEL Descriptor |
-| ETA_dEpsilon_A | Differential electronic effect descriptor | PaDEL |
+| ETA_dEpsilon_A | Differential electronic effect descriptor | PaDEL Descriptor |
 | ETA_dEpsilon_B | Alternative differential electronic effect descriptor | PaDEL Descriptor |
 | ETA_dEpsilon_C | Another variant of differential electronic effect descriptor | PaDEL Descriptor |
 | ETA_dEpsilon_D | Additional differential electronic effect descriptor | PaDEL Descriptor |
@@ -31,16 +31,16 @@ Each molecule - solvent combination contains two sets of calculated molecular de
 | ETA_Shape_P | Shape index descriptor quantifying molecular 3D structure | PaDEL Descriptor |
 | ETA_Shape_Y | Alternative shape descriptor focusing on molecular topology | PaDEL Descriptor |
 | ETA_Shape_X | Additional shape descriptor within ETA framework | PaDEL Descriptor |
-| ETA_Beta | Branching descriptor capturing molecular connectivity | PaDEL |
+| ETA_Beta | Branching descriptor capturing molecular connectivity | PaDEL Descriptor |
 | ETA_BetaP | Path-corrected branching descriptor | PaDEL Descriptor |
 | ETA_Beta_s | Simplified branching descriptor | PaDEL Descriptor |
 | ETA_BetaP_s | Path-corrected simplified branching descriptor | PaDEL Descriptor |
 | ETA_Beta_ns | Non-simplified branching descriptor | PaDEL Descriptor |
 | ETA_BetaP_ns | Path-corrected non-simplified branching descriptor | PaDEL Descriptor |
 | ETA_dBeta | Differential branching descriptor | PaDEL Descriptor |
-| ETA_dBetaP | Path-corrected differential branching descriptor | PaDEL |
-| ETA_Beta_ns_d | Differential non-simplified branching descriptor | PaDEL |
-| ETA_BetaP_ns_d | Path-corrected differential non-simplified branching descriptor | PaDEL |
+| ETA_dBetaP | Path-corrected differential branching descriptor | PaDEL Descriptor |
+| ETA_Beta_ns_d | Differential non-simplified branching descriptor | PaDEL Descriptor |
+| ETA_BetaP_ns_d | Path-corrected differential non-simplified branching descriptor | PaDEL Descriptor |
 | ETA_Eta | General molecular topological descriptor | PaDEL Descriptor |
 | ETA_EtaP | Path-corrected version of ETA_Eta | PaDEL Descriptor |
 | ETA_Eta_R | Radius-corrected ETA descriptor | PaDEL Descriptor |
