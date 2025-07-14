@@ -121,8 +121,6 @@ Each molecule - solvent combination contains two sets of calculated molecular de
 
 | Descriptor | Summary | Software Used |
 |------------|---------|---------------|
-| nAcid | Counts the number of acidic functional groups in the molecule | PaDEL Descriptor |
-| nBase | Counts the number of basic functional groups in the molecule | PaDEL Descriptor |
 | fr_Al_COO | Count of aliphatic carboxylic acid groups (-COOH) | RDKit |
 | fr_Al_OH | Count of aliphatic alcohol groups (-OH) | RDKit |
 | fr_Al_OH_noTert | Count of non-tertiary aliphatic alcohol groups | RDKit |
@@ -208,6 +206,8 @@ Each molecule - solvent combination contains two sets of calculated molecular de
 | fr_thiophene | Count of thiophene rings | RDKit |
 | fr_unbrch_alkane | Count of unbranched alkane chains | RDKit |
 | fr_urea | Count of urea groups | RDKit |
+| nAcid | Counts the number of acidic functional groups in the molecule | PaDEL Descriptor |
+| nBase | Counts the number of basic functional groups in the molecule | PaDEL Descriptor |
 
 ## Constitutional Descriptors
 
@@ -244,4 +244,3 @@ Each molecule - solvent combination contains two sets of calculated molecular de
 | Descriptor | Summary | Software Used |
 |------------|---------|---------------|
 | Morgan_Fingerprint | Circular fingerprints encoding molecular substructures up to a given radius, used for similarity and machine learning | RDKit |
-
