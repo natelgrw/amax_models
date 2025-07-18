@@ -1,4 +1,4 @@
-# Table Of AMAX-1 Molecular Desciptors
+# AMAX-1 Table of Molecular Desciptors
 
 Each molecule - solvent combination contains two sets of calculated molecular descriptors: one for the target molecule, and one for the solvent.
 
