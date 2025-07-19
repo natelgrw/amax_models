@@ -1,6 +1,6 @@
 # AMAX-1: A Benchmark UV-Vis λ<sub>max</sub> Prediction Model for LC-MS Compound Characterization
 
-**AMAX-1** is a large scale open source dataset and machine learning framework for predicting the **UV-Vis absorption maxima (λ<sub>max</sub>)** of small molecules in various solvents. Designed to support **compound characterization workflows in LC-MS**, AMAX-1 includes both an extensive dataset and a pretrained ML model for fast, accurate λmax estimation.
+**AMAX-1** is an open source dataset and machine learning framework for predicting the **UV-Vis absorption maxima (λ<sub>max</sub>)** of small molecules in various solvents. Designed to support **compound characterization workflows in LC-MS**, AMAX-1 includes both an extensive dataset and a pretrained ML model for fast, accurate λmax estimation.
 
 ## 📊 The AMAX-1 Dataset
 
