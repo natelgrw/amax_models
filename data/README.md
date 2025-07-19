@@ -1,6 +1,6 @@
 # AMAX-1 Tables of Molecular Desciptors
 
-Each compound–solvent combination in AMAX-1 is represented by two distinct sets of calculated descriptors:
+Each compound–solvent combination in AMAX-1 is represented by two distinct sets of calculated descriptors.
 
 Compound descriptors capture detailed structural, electronic, and topological features of the molecule, computed using both PaDEL Descriptor and RDKit.
 
