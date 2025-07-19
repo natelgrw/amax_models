@@ -1,4 +1,4 @@
-# AMAX-1 Tables of Molecular Desciptors
+# AMAX-1 Table of Molecular Desciptors
 
 Each compound–solvent combination in AMAX-1 is represented by two distinct sets of calculated descriptors.
 
