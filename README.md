@@ -10,7 +10,7 @@ The **AMAX-1 dataset** contains:
 - Experimentally measured **λ<sub>max</sub> values** curated from public datasets, benchmark papers, and literature
 - Hundreds of **compound and solvent descriptors** for **22,420** unique molecules and **356** unique solvents
 
-The dataset is actively expanding with new experimental λmax values from the **Coley Research Group at MIT**, ensuring AMAX-1 remains a growing resource for optical property prediction.
+The dataset is actively expanding with new experimental λ<sub>max</sub> values from the **Coley Research Group at MIT**, ensuring AMAX-1 remains a growing resource for optical property prediction.
 
 ## ⚙️ The AMAX-1 Model
 
@@ -24,6 +24,6 @@ Key modeling features:
 
 The pretrained model can be used for:
 
-- Estimating λmax for new compound–solvent pairs
+- Estimating λ<sub>max</sub> for new compound–solvent pairs
 - Aiding in peak assignment during LC-MS method development
-- Supporting chromophore screening and spectral ML workflows
+- Supporting generalized chromophore engineering and spectral ML workflows
