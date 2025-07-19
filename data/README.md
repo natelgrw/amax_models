@@ -2,7 +2,7 @@
 
 Each compound–solvent combination in AMAX-1 is represented by two distinct sets of calculated descriptors:
 
-Compound descriptors capture detailed structural, electronic, and topological features of the molecule, computed using both PaDEL-Descriptor and RDKit.
+Compound descriptors capture detailed structural, electronic, and topological features of the molecule, computed using both PaDEL Descriptor and RDKit.
 
 Solvent descriptors focus on physicochemical properties relevant to solvent effects in UV-Vis absorption, including parameters like polarity, hydrogen-bonding capacity, and dielectric behavior.
 
