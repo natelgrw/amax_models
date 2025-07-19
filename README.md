@@ -6,7 +6,7 @@
 
 The **AMAX-1 dataset** contains:
 
-- **40,026 molecule–solvent combinations**, the largest λmax dataset of its kind to date
+- **40,026 molecule–solvent combinations**, the largest λ<sub>max</sub> dataset of its kind to date
 - Experimentally measured **λ<sub>max</sub> values** curated from public datasets, benchmark papers, and literature
 - Hundreds of **compound and solvent descriptors** for **22,420** unique molecules and **356** unique solvents
 
