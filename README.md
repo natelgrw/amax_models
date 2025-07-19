@@ -1,13 +1,39 @@
-# AMAX-1: A Benchmark Dataset and Machine Learning Model for UV-Vis λmax Prediction
+# AMAX-1: A Benchmark UV-Vis λmax Prediction Model for Aiding Compound Characterization in LC-MS
 
-**AMAX-1** is an extensive dataset containing over **30,000 molecule – solvent combinations** along with their corresponding **UV-Vis absorbance maxima (λmax) values**. The dataset also includes a wide range of **chemical descriptors** and **molecular fingerprints** calculated using **PaDEL-Descriptor** and **RDKit**.
+**AMAX-1** is a large-scale dataset and machine learning framework for predicting the **UV-Vis absorption maxima (λmax)** of small molecules in various solvents. Designed to support **compound characterization workflows in LC-MS**, AMAX-1 includes both an extensive dataset and a pretrained ML model for fast, accurate λmax estimation.
 
-In addition to the dataset, **AMAX-1** will include a fully trained, optimized machine learning model for λmax prediction, selected from a benchmark of over **numerous algorithms**.
+## 📊 The AMAX-1 Dataset
 
-Designed to accelerate research in spectral property prediction, virtual screening, and chromophore design, **AMAX-1** serves as both a benchmark dataset and a pretrained model for λmax estimation, laying the groundwork for future foundation models in spectral learning tasks.
+The **AMAX-1 dataset** contains:
 
-## The AMAX-1 Dataset
+- **40,026 molecule–solvent combinations**, the largest λmax dataset of its kind to date
+- **22,420** unique molecules and **356** unique solvents
+- Experimentally measured **λmax values** curated from public datasets, benchmark papers, and literature
+- Hundreds of **chemical and solvent descriptors**, calculated using **PaDEL-Descriptor** and **RDKit**
 
-**AMAX-1** compiles λmax values from three previously established datasets: **SMFluo1**, **UVVsiML**, and **ChemDataExtractor**, bringing the total amount of molecule - solvent combinations covered to **31,516**. Additionally, the dataset is actively expanding through the continuous addition of new experimental λmax data from the **Coley Research Group** at **MIT**.
+The dataset is actively expanding with new experimental λmax values from the **Coley Research Group at MIT**, ensuring AMAX-1 remains a growing resource for optical property prediction.
 
-Each molecule and solvent is supported by a comprehensive set of over 300 molecular descriptors calculated through **PaDEL** and **RDKit**.
+## ⚙️ The AMAX-1 Model
+
+AMAX-1 includes a fully trained, optimized machine learning model for λmax prediction. The model was selected after benchmarking over **210 algorithms** using cross-validation, hyperparameter optimization, and external test sets.
+
+Key modeling features:
+
+- **Input:** Concatenated vector of compound and solvent descriptors (900–1000 total features)
+- **Output:** Predicted UV-Vis absorption maximum (λmax, in nm)
+- **Best-performing models:** Gradient boosting (XGBoost, LightGBM), multilayer perceptrons, and ensemble regressors
+
+The pretrained model can be used for:
+
+- Estimating λmax for new compound–solvent pairs
+- Aiding in peak assignment during LC-MS method development
+- Supporting chromophore screening and spectral ML workflows
+
+## 🚀 Use Cases
+
+AMAX-1 is designed to enable:
+
+- High-throughput λmax prediction for virtual libraries
+- Integration into LC-MS peak characterization pipelines
+- Training and benchmarking new spectral ML models
+- Chromophore engineering and absorption tuning

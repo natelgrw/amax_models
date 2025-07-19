@@ -1,6 +1,12 @@
-# AMAX-1 Table of Molecular Desciptors
+# AMAX-1 Tables of Molecular Desciptors
 
-Each molecule - solvent combination contains two sets of calculated molecular descriptors: one for the target molecule, and one for the solvent.
+Each compound–solvent combination in AMAX-1 is represented by two distinct sets of calculated descriptors:
+
+Compound descriptors capture detailed structural, electronic, and topological features of the molecule, computed using both PaDEL-Descriptor and RDKit.
+
+Solvent descriptors focus on physicochemical properties relevant to solvent effects in UV-Vis absorption, including parameters like polarity, hydrogen-bonding capacity, and dielectric behavior.
+
+The combined feature vector typically includes between 900–1000 descriptors per data point, enabling fine grained learning of structure–property relationships. Descriptor calculation scripts and metadata are provided to support reproducibility and allow recalculation or extension for new compounds or solvents.
 
 ## Topological Descriptors
 
