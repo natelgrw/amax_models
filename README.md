@@ -25,7 +25,7 @@ AMAX-1 is designed for use in:
 
 ## 📋 Data Sources Used
 
-Detailed information on the data sources comprising AMAX-1 can be found in the linked Hugging Face repository above.
+Detailed information on the data sources comprising the AMAX-1 dataset can be found in the linked Hugging Face repository above.
 
 ## ✒️ Citation
 
