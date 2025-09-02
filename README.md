@@ -1,6 +1,6 @@
 # AMAX-1: UV-Vis Lambda Max Prediction for LC-MS
 
-AMAX-1 is an open source dataset and machine learning model in active development designed to predict the (λ<sub>max</sub>) of chemical compounds and aid LC-MS compound characterization workflows.
+AMAX-1 is an open source dataset and a collection of machine learning models in active development designed to predict the (λ<sub>max</sub>) of chemical compounds and aid LC-MS compound characterization workflows.
 
 ## 📊 The AMAX-1 Dataset
 
