@@ -10,7 +10,7 @@ It is actively expanding with new experimental retention time values from the Co
 
 Additionally, AMAX-1 includes ```.smi``` lists of 22,418 unique compounds and 356 unique solvents in the dataset for chemical descriptor calculations.
 
-The full dataset is accessible at this [HuggingFace Repository](https://huggingface.co/datasets/natelgrw/AMAX-1).
+The full dataset is accessible at this [Hugging Face Repository](https://huggingface.co/datasets/natelgrw/AMAX-1).
 
 AMAX-1 is designed for use in:
 
