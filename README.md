@@ -25,7 +25,7 @@ The AMAX-1 dataset contains:
 
 ## 📋 Data Sources Used
 
-Detailed information on the data sources comprising AMAX-1 can be found in the linked HuggingFace repository.
+Detailed information on the data sources comprising AMAX-1 can be found in the linked Hugging Face repository above.
 
 ## ✒️ Citation
 
