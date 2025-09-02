@@ -11,7 +11,7 @@ The AMAX-1 dataset contains:
 - 40,016 unique molecule–environment combinations, the largest singular LC-MS retention time dataset of its kind to date
 - Experimentally measured λ<sub>max</sub> values in nm, curated from public datasets, benchmark papers, and literature.
 
-It is actively expanding with new experimental retention time values from the Coley Research Group at MIT, ensuring it remains a growing resource for optical property prediction.
+The AMAX-1 dataset is actively expanding with new experimental retention time values from the Coley Research Group at MIT, ensuring it remains a growing resource for optical property prediction.
 
 Additionally, AMAX-1 includes ```.smi``` lists of 22,418 unique compounds and 356 unique solvents in the dataset for chemical descriptor calculations.
 
