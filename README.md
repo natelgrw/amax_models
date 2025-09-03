@@ -37,6 +37,6 @@ If you use the AMAX dataset in a project, please cite the following:
   author={Leung, Nathan},
   institution={Coley Research Group @ MIT}
   year={2025},
-  howpublished={\url{https://huggingface.co/datasets/natelgrw/AMAX-1}}
+  howpublished={\url{https://huggingface.co/datasets/natelgrw/AMAX}}
 }
 ```
