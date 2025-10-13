@@ -1,0 +1,66 @@
+{
+  "model_info": {
+    "name": "AMAX_XGB1",
+    "type": "XGBoost Regressor",
+    "framework": "XGBoost",
+    "architecture": "Gradient Boosting Decision Trees",
+    "created_date": "2024-10-13",
+    "status": "Production Ready (Retrained)"
+  },
+  "architecture": {
+    "n_estimators": 500,
+    "max_depth": 9,
+    "learning_rate": 0.1,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "reg_alpha": 0.0,
+    "reg_lambda": 1.0,
+    "random_state": 42,
+    "tree_method": "hist",
+    "device": "cuda"
+  },
+  "training_config": {
+    "hyperparameter_search": "GridSearchCV",
+    "cv_folds": 3,
+    "scoring_metric": "neg_mean_absolute_error",
+    "parameter_combinations": 32,
+    "training_data_only": true,
+    "data_leakage": false,
+    "retrained": true,
+    "gpu_acceleration": true
+  },
+  "performance_metrics": {
+    "validation": {
+      "r2_score": 0.8882,
+      "mae": 19.567,
+      "rmse": 39.219,
+      "realistic": true,
+      "note": "Expected after retraining without data leakage"
+    },
+    "test": {
+      "r2_score": 0.9084,
+      "mae": 17.682,
+      "rmse": 35.507,
+      "realistic": true
+    }
+  },
+  "data_info": {
+    "training_samples": 32010,
+    "validation_samples": 4001,
+    "test_samples": 4002,
+    "features": 312,
+    "feature_type": "RDKit molecular descriptors",
+    "target": "lambda_max (nm)",
+    "data_split": "random"
+  },
+  "feature_importance": {
+    "method": "built_in_feature_importances",
+    "top_descriptors": [
+      "NumAliphaticRings_comp",
+      "fr_Imine_comp",
+      "NumAliphaticHeterocycles_comp",
+      "fr_azo_comp", 
+      "fr_COO_comp"
+    ]
+  }
+}

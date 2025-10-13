@@ -1,0 +1,32 @@
+name: amaxenv
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - rdkit
+  - pip
+  - pip:
+      - torch
+      - torchvision
+      - torchaudio
+      - scikit-learn
+      - xgboost
+      - lightgbm
+      - catboost
+      - pandas
+      - numpy
+      - matplotlib
+      - seaborn
+      - jupyterlab
+      - ipython
+      - sentencepiece
+      - transformers
+      - tokenizers
+      - tqdm
+      - accelerate
+      - optuna
+      - joblib
+      - pathlib2
+      - shap
+      - scipy

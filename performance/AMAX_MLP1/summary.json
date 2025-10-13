@@ -1,0 +1,61 @@
+{
+  "model_info": {
+    "name": "AMAX_MLP1",
+    "type": "Multi-Layer Perceptron",
+    "framework": "PyTorch",
+    "architecture": "Sequential Neural Network",
+    "created_date": "2024-10-12"
+  },
+  "architecture": {
+    "input_size": 312,
+    "hidden_layers": [1024, 512],
+    "output_size": 1,
+    "activation": "tanh",
+    "dropout_rate": 0.1,
+    "total_parameters": "~1.2M",
+    "model_depth": 4
+  },
+  "training_config": {
+    "optimizer": "Adam",
+    "learning_rate": 0.01,
+    "batch_size": 2048,
+    "max_epochs": 150,
+    "patience": 25,
+    "early_stopping": true,
+    "device": "cuda",
+    "data_leakage": false
+  },
+  "performance_metrics": {
+    "validation": {
+      "r2_score": 0.8664,
+      "mae": 26.187,
+      "rmse": 42.885,
+      "realistic": true
+    },
+    "test": {
+      "r2_score": 0.8913,
+      "mae": 23.956,
+      "rmse": 38.680,
+      "realistic": true
+    }
+  },
+  "data_info": {
+    "training_samples": 32010,
+    "validation_samples": 4001,
+    "test_samples": 4002,
+    "features": 312,
+    "feature_type": "RDKit molecular descriptors",
+    "target": "lambda_max (nm)",
+    "data_split": "random"
+  },
+  "feature_importance": {
+    "method": "permutation_importance",
+    "top_descriptors": [
+      "BertzCT_comp",
+      "NumHAcceptors_comp", 
+      "SLogP_VSA8_comp",
+      "SMR_VSA8_comp",
+      "fr_halogen_comp"
+    ]
+  }
+}
