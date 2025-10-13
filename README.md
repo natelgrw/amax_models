@@ -2,6 +2,8 @@
 
 AMAX is a collection of machine learning models under active development designed to predict the λ<sub>max</sub> of chemical compounds and aid LC-MS compound characterization workflows.
 
+Active AMAX prediction models are accessible at this [Hugging Face Model Repository](https://huggingface.co/datasets/natelgrw/AMAX). Depreciated models are available upon request at `natelgrw.tech@gmail.com`. 
+
 This repository contains scripts for model training and processing, along with model performance metrics.
 
 ## 🤖 Available Models
@@ -11,8 +13,6 @@ This repository contains scripts for model training and processing, along with m
 | **AMAX_XGB1** | XGBoost | Gradient Boosting (500 estimators) | 0.9084 | 17.682 | 35.507 | Active |
 | **AMAX_RF1** | Scikit-Learn | Random Forest (500 trees) | 0.9035 | 18.601 | 36.441 | Active |
 | **AMAX_MLP1** | PyTorch | Sequential NN (1024 -> 512) | 0.8913 | 23.956 | 38.68 | Active |
-
-Active AMAX prediction models are accessible at this [Hugging Face Model Repository](https://huggingface.co/datasets/natelgrw/AMAX). Depreciated models are available upon request at `natelgrw.tech@gmail.com`. 
 
 All models utilize 312 RDKit molecular descriptors combining both compound and solvent features, trained on a random data split of 32,010 training samples with 4,001 validation and 4,002 test samples. Each model has been retrained to eliminate data leakage and ensure robust performance evaluation.
 
