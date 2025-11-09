@@ -1,61 +1,62 @@
 {
-  "model_info": {
-    "name": "AMAX_MLP1",
-    "type": "Multi-Layer Perceptron",
-    "framework": "PyTorch",
-    "architecture": "Sequential Neural Network",
-    "created_date": "2024-10-12"
+  "model": "AMAX_MLP1",
+  "model_type": "PyTorch MLP",
+  "environment": "amaxenv",
+  "hyperparameters": {
+    "hidden_layers": "[1024, 512, 256, 128, 64]",
+    "dropout_rate": 0.3,
+    "use_batch_norm": true,
+    "use_residual": true,
+    "learning_rate": 0.001,
+    "batch_size": 128,
+    "max_epochs": 500,
+    "early_stopping_patience": 50,
+    "early_stopping_min_delta": 0.0001,
+    "lr_scheduler_patience": 20,
+    "lr_scheduler_factor": 0.5,
+    "lr_warmup_epochs": 5,
+    "weight_decay": 1e-05,
+    "grad_clip_norm": 1.0,
+    "optimizer": "AdamW",
+    "random_state": 42
   },
-  "architecture": {
-    "input_size": 312,
-    "hidden_layers": [1024, 512],
-    "output_size": 1,
-    "activation": "tanh",
-    "dropout_rate": 0.1,
-    "total_parameters": "~1.2M",
-    "model_depth": 4
-  },
-  "training_config": {
-    "optimizer": "Adam",
-    "learning_rate": 0.01,
-    "batch_size": 2048,
-    "max_epochs": 150,
-    "patience": 25,
-    "early_stopping": true,
-    "device": "cuda",
-    "data_leakage": false
-  },
-  "performance_metrics": {
-    "validation": {
-      "r2_score": 0.8664,
-      "mae": 26.187,
-      "rmse": 42.885,
-      "realistic": true
-    },
-    "test": {
-      "r2_score": 0.8913,
-      "mae": 23.956,
-      "rmse": 38.680,
-      "realistic": true
+  "n_features": 312,
+  "n_samples": 40013,
+  "hardware": {
+    "compute_type": "GPU",
+    "gpu": {
+      "model": "NVIDIA RTX A5000",
+      "architecture": "Ampere",
+      "memory_gb": 24,
+      "compute_capability": "8.6",
+      "cuda_cores": 8192,
+      "num_gpus": 4
     }
   },
-  "data_info": {
-    "training_samples": 32010,
-    "validation_samples": 4001,
-    "test_samples": 4002,
-    "features": 312,
-    "feature_type": "RDKit molecular descriptors",
-    "target": "lambda_max (nm)",
-    "data_split": "random"
-  },
-  "feature_importance": {
-    "method": "permutation_importance",
-    "top_descriptors": [
-      "BertzCT_comp",
-      "NumHAcceptors_comp", 
-      "SLogP_VSA8_comp",
-      "SMR_VSA8_comp",
-      "fr_halogen_comp"
-    ]
+  "cross_validation": {
+    "scaffold": {
+      "RMSE": 52.38168943220817,
+      "MAE": 33.46833534240723,
+      "R2": 0.7925211548805237,
+      "Pearson_r": 0.891418
+    },
+    "solvent": {
+      "RMSE": 76.26117095395097,
+      "MAE": 56.680049133300784,
+      "R2": 0.5461256265640259,
+      "Pearson_r": 0.7460549
+    },
+    "cluster": {
+      "RMSE": 63.814443651286034,
+      "MAE": 43.015631103515624,
+      "R2": 0.6669126629829407,
+      "Pearson_r": 0.8173491
+    },
+    "overall": {
+      "RMSE": 64.1524346791484,
+      "MAE": 44.38800519307454,
+      "R2": 0.6685198148091634,
+      "Pearson_r": 0.81827396
+    }
   }
 }

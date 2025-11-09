@@ -1,66 +1,54 @@
 {
-  "model_info": {
-    "name": "AMAX_XGB1",
-    "type": "XGBoost Regressor",
-    "framework": "XGBoost",
-    "architecture": "Gradient Boosting Decision Trees",
-    "created_date": "2024-10-13",
-    "status": "Production Ready (Retrained)"
-  },
-  "architecture": {
-    "n_estimators": 500,
+  "model": "AMAX_XGB1",
+  "model_type": "XGBoost",
+  "hyperparameters": {
+    "n_estimators": 1000,
     "max_depth": 9,
-    "learning_rate": 0.1,
+    "learning_rate": 0.05,
     "subsample": 0.8,
     "colsample_bytree": 0.8,
-    "reg_alpha": 0.0,
-    "reg_lambda": 1.0,
-    "random_state": 42,
     "tree_method": "hist",
-    "device": "cuda"
+    "device": "cuda",
+    "random_state": 42,
+    "verbosity": 1
   },
-  "training_config": {
-    "hyperparameter_search": "GridSearchCV",
-    "cv_folds": 3,
-    "scoring_metric": "neg_mean_absolute_error",
-    "parameter_combinations": 32,
-    "training_data_only": true,
-    "data_leakage": false,
-    "retrained": true,
-    "gpu_acceleration": true
-  },
-  "performance_metrics": {
-    "validation": {
-      "r2_score": 0.8882,
-      "mae": 19.567,
-      "rmse": 39.219,
-      "realistic": true,
-      "note": "Expected after retraining without data leakage"
-    },
-    "test": {
-      "r2_score": 0.9084,
-      "mae": 17.682,
-      "rmse": 35.507,
-      "realistic": true
+  "n_features": 312,
+  "n_samples": 40013,
+  "hardware": {
+    "compute_type": "GPU",
+    "gpu": {
+      "model": "NVIDIA RTX A5000",
+      "architecture": "Ampere",
+      "memory_gb": 24,
+      "compute_capability": "8.6",
+      "cuda_cores": 8192,
+      "num_gpus": 4
     }
   },
-  "data_info": {
-    "training_samples": 32010,
-    "validation_samples": 4001,
-    "test_samples": 4002,
-    "features": 312,
-    "feature_type": "RDKit molecular descriptors",
-    "target": "lambda_max (nm)",
-    "data_split": "random"
-  },
-  "feature_importance": {
-    "method": "built_in_feature_importances",
-    "top_descriptors": [
-      "NumAliphaticRings_comp",
-      "fr_Imine_comp",
-      "NumAliphaticHeterocycles_comp",
-      "fr_azo_comp", 
-      "fr_COO_comp"
-    ]
+  "cross_validation": {
+    "scaffold": {
+      "RMSE": 53.934536719928744,
+      "MAE": 35.35934929279418,
+      "R2": 0.782758488922571,
+      "Pearson_r": 0.8855388193094156
+    },
+    "solvent": {
+      "RMSE": 47.75755145372533,
+      "MAE": 27.327323258374964,
+      "R2": 0.8295077323074814,
+      "Pearson_r": 0.9114362302586805
+    },
+    "cluster": {
+      "RMSE": 67.77338298850387,
+      "MAE": 45.32841539305325,
+      "R2": 0.6264362574790601,
+      "Pearson_r": 0.7957339348166121
+    },
+    "overall": {
+      "RMSE": 56.488490387385994,
+      "MAE": 36.005029314740796,
+      "R2": 0.7462341595697042,
+      "Pearson_r": 0.864236328128236
+    }
   }
 }

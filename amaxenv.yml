@@ -30,3 +30,4 @@ dependencies:
       - pathlib2
       - shap
       - scipy
+      - umap-learn
