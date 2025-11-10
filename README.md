@@ -12,7 +12,7 @@ This repository contains scripts for model training and processing, along with m
 
 For compound λ<sub>max</sub> prediction, we recommend that you use AMAX_XGB1, the model with the greatest overall prediction accuracy.
 
-| Model | Architecture | Overall RMSE (s) | Overall MAE (s) | Overall R<sup>2</sup> | Status |
+| Model | Architecture | Overall RMSE (nm) | Overall MAE (nm) | Overall R<sup>2</sup> | Status |
 |-----|-----|-----|-----|-----|-----|
 | AMAX_XGB1 | XGBoost | 56.488 | 36.005 | 0.746 | Active |
 | AMAX_MLP1 | PyTorch Sequential MLP | 64.152 | 44.388 | 0.669 | Active |
