@@ -14,8 +14,8 @@ For compound λ<sub>max</sub> prediction, we recommend that you use AMAX_XGB1, t
 
 | Model | Architecture | Overall RMSE (nm) | Overall MAE (nm) | Overall R<sup>2</sup> | Status |
 |-----|-----|-----|-----|-----|-----|
-| AMAX_XGB1 | XGBoost | 56.488 | 36.005 | 0.746 | Active |
-| AMAX_MLP1 | PyTorch Sequential MLP | 64.152 | 44.388 | 0.669 | Active |
+| **AMAX_XGB1** | XGBoost | 56.488 | 36.005 | 0.746 | Active |
+| **AMAX_MLP1** | PyTorch Sequential MLP | 64.152 | 44.388 | 0.669 | Active |
 
 All models were evaluated across rigorous scaffold, cluster, and method splits.
 
